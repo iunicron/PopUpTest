@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="MyCustomView" id="iN0-l3-epB" customClass="MyCustomView" customModule="PopUpTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="176"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0H-dY-tQ1">
+                    <rect key="frame" x="164" y="109" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="btnTest:" destination="iN0-l3-epB" eventType="touchUpInside" id="ZMO-ja-Q7c"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OR1-Km-VNZ">
+                    <rect key="frame" x="16" y="80" width="343" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mij-MJ-iZ2">
+                    <rect key="frame" x="16" y="42" width="343" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="mij-MJ-iZ2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="42" id="1ut-mC-1If"/>
+                <constraint firstItem="OR1-Km-VNZ" firstAttribute="top" secondItem="mij-MJ-iZ2" secondAttribute="bottom" constant="8" symbolic="YES" id="Bf1-0E-WSn"/>
+                <constraint firstItem="mij-MJ-iZ2" firstAttribute="leading" secondItem="OR1-Km-VNZ" secondAttribute="leading" id="Ipx-TA-Cw5"/>
+                <constraint firstItem="J0H-dY-tQ1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Sbu-Rr-5WK"/>
+                <constraint firstItem="mij-MJ-iZ2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Yfq-AG-cx2"/>
+                <constraint firstItem="J0H-dY-tQ1" firstAttribute="top" secondItem="OR1-Km-VNZ" secondAttribute="bottom" constant="8" symbolic="YES" id="eCd-ZG-ovU"/>
+                <constraint firstItem="OR1-Km-VNZ" firstAttribute="centerX" secondItem="J0H-dY-tQ1" secondAttribute="centerX" id="lc1-6f-7Xv"/>
+                <constraint firstItem="mij-MJ-iZ2" firstAttribute="trailing" secondItem="OR1-Km-VNZ" secondAttribute="trailing" id="wa3-9X-43P"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="myLabel" destination="OR1-Km-VNZ" id="eFv-vZ-3jb"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="-194"/>
+        </view>
+    </objects>
+</document>
